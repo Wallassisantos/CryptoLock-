@@ -1,0 +1,81 @@
+/* Arquivo styles.css */
+
+/* Estilos para o título */
+.title {
+  font-size: 4em;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Estilos para o nome do autor */
+.author {
+  font-size: 10px;
+  text-align: center;
+  font-style: italic;
+}
+
+body {
+  background-color: black;
+  color: limegreen; /* Texto verde fluorescente */
+  font-family: 'Courier New', monospace; /* Estilo de terminal */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Centraliza verticalmente */
+  margin: 0;
+}
+
+.container {
+  padding: 10px;
+  text-align: center;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.options,
+.message-input,
+.output {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+input[type="text"],
+textarea {
+  width: 90%;
+  padding: 8px;
+  margin-bottom: 8px;
+  background-color: black;
+  color: limegreen;
+  border: 1px solid limegreen;
+}
+
+.btn {
+  padding: 8px 16px;
+  background-color: black;
+  color: limegreen;
+  border: 1px solid limegreen;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: limegreen;
+  color: black;
+}
+
+.verification {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: red; /* Altere para verde quando a chave estiver aplicada */
+  display: inline-block;
+  margin-left: 8px;
+}
+
+.ascii-art {
+  color: limegreen;
+  font-size: 16px;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CryptoLock</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="title">CryptoLock</div>
+    <div class="author">Desenvolvido por Wallassi Santos</div>
+    <div class="flex-container">
+      <button onclick="gerarChave()">Gerar Nova Chave</button>
+      <button onclick="deletarChave()">Deletar Chave</button>
+      <span class="verification" id="indicador"></span>
+    </div>
+    <input type="text" id="chaveInput" placeholder="Insira a chave">
+    <button onclick="aplicarChave()">Aplicar Chave</button>
+    <div class="flex-container">
+      <textarea id="mensagemOriginal" placeholder="Insira sua mensagem"></textarea>
+      <button onclick="criptografar()">Criptografar</button>
+    </div>
+    <textarea id="mensagemCriptografada" placeholder="Mensagem criptografada" readonly></textarea>
+    <button onclick="descriptografar()">Descriptografar</button>
+    <textarea id="mensagemDescriptografada" placeholder="Mensagem descriptografada" readonly></textarea>
+    <textarea id="mensagemCriptografadaExtra" placeholder="Cole a mensagem criptografada"></textarea>
+  </div>
+
+  <!-- Link para o arquivo JavaScript -->
+  <script src="script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+</body>
+</html>
